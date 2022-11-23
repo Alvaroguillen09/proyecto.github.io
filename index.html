@@ -12,57 +12,19 @@
 	<title>Calculadora de Indice de Masa Corporal</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<div class="container">
-  <div class="row">
-<h1>Calculadora de IMC: Indice de Masa Corporal</h1>
-<!-- FORMULARIO HTML -->
-<p>Ingrese peso (kg): <input type="text" id="kg"></p>
-<p>Ingrese Altura (m): <input type="text" id="m"></p>
-<button class="calc">Calcular</button>
-<p>IMC: <span id="imc"></span></p>
-<p>Lectura: <span id="lectura"></span></p>
-
-<!-- SCRIPT PARA CALCULAR IMC -->
-<script type="text/javascript">
-	calc = document.getElementById("calc");
-	kg = document.getElementById("kg");
-	m = document.getElementById("m");
-	imc = document.getElementById("imc");
-	lectura = document.getElementById("lectura");
-
-	calc.onclick = function(){
-		if(kg.value!="" && m.value!=""){
-			imcx = (kg.value / (m.value* m.value));
-			imc.innerHTML = imcx
-			console.log(imcx);
-
-			if(imcx<18.5){ lectura.innerHTML = "Peso inferior al normal"; }
-			else if(imcx>=18.5 && imcx<=24.9){ lectura.innerHTML = "Peso normal"; }
-			else if(imcx>=25 && imcx<=29.9){ lectura.innerHTML = "Peso superior al normal"; }
-			else if(imcx>30){ lectura.innerHTML = "Obesidad"; }
-
-		}else{
-			alert("Debes ingresar peso y altura.")
-		}
-
-	};
-</script>
-
-</body>
+  <h1>Calculadora de IMC: Indice de Masa Corporal</h1>
+  <!-- FORMULARIO HTML -->
+  <p>Ingrese peso (kg): <input type="text" id="kg"></p>
+  <p>Ingrese Altura (m): <input type="text" id="m"></p>
+  <button id="calc">Calcular</button>
+  <p>IMC: <span id="imc"></span></p>
+  <p>Lectura: <span id="lectura"></span></p>
+    <script>
+    <a href="calc.onclick()">Llamar función</a>
+      function funcion(){
+        alert('Función ejecutada');
+      }
+    </script>
+    
+  </body>
 </html>
