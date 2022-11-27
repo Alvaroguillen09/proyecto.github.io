@@ -4,27 +4,32 @@
   <link rel="stylesheet" href="indexcss.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
+  <title>holajeje</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script language="javascript" type="text/javascript" src="imc.js"></script>
+  </head>
+  <body>
 
-	<title>Calculadora de Indice de Masa Corporal</title>
-</head>
-<body>
-  <h1>Calculadora de IMC: Indice de Masa Corporal</h1>
-  <!-- FORMULARIO HTML -->
-  <p>Ingrese peso (kg): <input type="text" id="kg"></p>
-  <p>Ingrese Altura (m): <input type="text" id="m"></p>
-  <button id="calc">Calcular</button>
-  <p>IMC: <span id="imc"></span></p>
-  <p>Lectura: <span id="lectura"></span></p>
-    <script>
-    <a href="calc.onclick()">Llamar función</a>
-      function funcion(){
-        alert('Función ejecutada');
-      }
-    </script>
+    <h2>Calculadora indice de masa corporal</h2>
+<p>Ingrese peso (kg): <input type="text" id="kg"></p>
+<p>Ingrese Altura (cm): <input type="text" id="m"></p>
+<input id="calc" type="button" onclick="calcular()" value="calcular"></input>
+<p>IMC: <span id="imc"></span></p>
+<p>Lectura: <span id="lectura"></span></p>
+
+<h2>Calculadora Frecuencia	Cardiaca	Máxima</h2>
+<p>Ingrese de edad: <input type="text" id="edad"></p>
+<p>sexo: <input type="text" id="sexo"></p>
+<input id="calc2" type="button" onclick="calcular2()" value="calcular"></input>
+<p>IMC: <span id="edad"></span></p>
+<p>Lectura: <span id="lectura"></span></p>
+
+
+
+
+
     
   </body>
 </html>
