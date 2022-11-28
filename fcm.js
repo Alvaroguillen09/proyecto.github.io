@@ -17,9 +17,9 @@ function calcular2(){
 
             
             lectura.innerHTML = porcentaje+"Zona recuperación"; 
-            (frecuenciares>=porcentaje2 && frecuenciares<=porcentaje3);lectura.innerHTML = "Zona aeróbica"; 
-            (frecuenciares>=porcentaje3 && frecuenciares<=porcentaje4);lectura.innerHTML = "Zona anaeróbica"; 
-            (frecuenciares>porcentaje4);lectura.innerHTML = "Línea roja"; 
+            lectura.innerHTML = porcentaje2+"Zona aeróbica"; 
+            lectura.innerHTML = porcentaje3+"Zona anaeróbica"; 
+            lectura.innerHTML = porcentaje4+"Línea roja"; 
 
         }else if(sexo=="mujer"){
             var frecuenciares=226-edad;
