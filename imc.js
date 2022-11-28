@@ -5,7 +5,7 @@ function calcular( ){
 	imc = document.getElementById("imc");
 	lectura = document.getElementById("lectura");
 
-    if(kg!="" && m!=""){
+    
 		var imcres=kg/(m*m);
 		imc.innerHTML=imcres;
            
@@ -14,8 +14,8 @@ function calcular( ){
         else if(imcres>=25 && imcres<=29.9){ lectura.innerHTML = "Peso superior al normal"; }
         else if(imcres>30){ lectura.innerHTML = "Obesidad"; }
 
-    }else{
+    else{
         alert("Debes ingresar peso y altura.")
     }
-};
+}
 
