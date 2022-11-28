@@ -1,1 +1,23 @@
-//Crea una tabla de horario de mañana que muestre las horas de dos en dos con el formato 9:00-11:00, desde las 9 hasta las 15:00 y los dı́as del lunes al viernes.Habrá otra tabla de horario de tarde que muestre las horas de una en una con el formato 16:00-17:00, desde las 16 hasta las 21:00 y los dı́as del lunes al domingo.Tanto las horas como los dı́as (es decir, la primera columna y la primera Cila) tendrán etiqueta th. El resto tendrán etiqueta td.
+function MiNombreFuncion()
+{
+document.writeln("<h1 align=\"center\">Horario escolar</h1>");
+document.writeln("    <table align=\"center\" border=\"4\" bordercolor=\"purple\"");
+document.writeln("    cellpadding=\"10\" cellspacing=\"20\">");
+document.writeln("      <tr>");
+document.writeln("        <th bgcolor=\"yellow\">Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th>");
+document.writeln("<th>Jueves</th><th>Viernes</th>");
+document.writeln("</tr>");
+document.writeln("<tr>");
+document.writeln("<td>8-10</td><td align=\"center\" colspan=\"3\">Mate</td><td>Compu</td><td>Mate</td>");
+document.writeln("</tr>");
+document.writeln("<tr>");
+document.writeln("<td>10-12</td><td>Geografía</td><td>Historia</td><td>Geografía</td>");
+document.writeln("<td>Historia</td><td>Geografía</td>");
+document.writeln("</tr>");
+document.writeln("<tr>");
+document.writeln("<td>12-14</td><td>Física</td><td>Inglés</td><td>Física</td><td align=\"center\" rowspan=\"2\">Inglés<br>y<br>Computación</td><td>Física</td>");
+document.writeln("</tr>");
+document.writeln("<tr>");
+document.writeln("<td>15-17</td><td>Anatomía</td><td>Karate</td><td>Karate</td><td>Karate</td></tr>");
+document.writeln("</table>");
+}
