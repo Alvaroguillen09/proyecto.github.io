@@ -3,9 +3,10 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="indexcss.css">
+  <link rel="stylesheet" href="navbar.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>holajeje</title>
+  <title>Calculadoras</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -14,10 +15,19 @@
   <script language="javascript" type="text/javascript" src="categoria.js"></script>
   <script language="javascript" type="text/javascript" src="horarios.js"></script>
   <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-  
-
-  </head>
+</head>
   <body>
+    
+<!-- Hack Para Desplegar el Menú activando un checkbox -->
+<input type="checkbox" class="checkbox" id="menu-toogle"/>
+<label for="menu-toogle" class="menu-toogle"></label>
+<nav class="nav">
+  <a href="#" class="nav__item current">Item del Menú 1</a>
+  <a href="#" class="nav__item">Item del Menú 2</a>
+  <a href="#" class="nav__item">Item del Menú 3</a>
+  <a href="#" class="nav__item">Item del Menú 4</a>
+  <a href="#" class="nav__item">Item del Menú 5</a>
+</nav>
 
     <h2>Calculadora indice de masa corporal</h2>
 <p>Ingrese peso (kg): <input type="text" id="kg"></p>
@@ -69,7 +79,7 @@ crea un boton que al darle click se ejecuta la funcion horariomanana -->
           <a class="link-1" href="#">Home</a>
           <a href="#">Contact</a>
         </p>
-        <p>&copy;Copyright de la pagina de Antonio y Alvaro</p>
+        <p>&copy;Copyright de la pagina de Antonio Pacheco y Alvaro Guillen</p>
       </div>
   </footer>
   </body>
