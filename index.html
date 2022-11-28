@@ -17,7 +17,14 @@
   <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
   <body>
-    
+    <header>
+      <ul>
+        <li><a href="default.html" class="1">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+    </header>
 <!-- Hack Para Desplegar el Menú activando un checkbox -->
 <input type="checkbox" class="checkbox" id="menu-toogle"/>
 <label for="menu-toogle" class="menu-toogle"></label>
@@ -29,37 +36,64 @@
   <a href="#" class="nav__item">Item del Menú 5</a>
 </nav>
 
-    <h2>Calculadora indice de masa corporal</h2>
-<p>Ingrese peso (kg): <input type="text" id="kg"></p>
-<p>Ingrese Altura (cm): <input type="text" id="m"></p>
-<input id="calc" type="button" onclick="calcular()" value="calcular"></input>
-<p>IMC: <span id="imc"></span></p>
-<p>Se encuentra en: <span id="lectura"></span></p>
+
+<div class="tarjeta">
+  <div class="titulo">Calculadora indice de masa corporal</div>
+  <div class="cuerpo">
+    <p>Ingrese peso (kg): <input type="text" id="kg"></p>
+    <p>Ingrese Altura (cm): <input type="text" id="m"></p>
+
+    <p>IMC: <span id="imc"></span></p>
+    <p>Se encuentra en: <span id="lectura"></span></p>
+  </div>
+  <div class="pie">
+    <input id="calc" type="button" onclick="calcular()" value="calcular"></input>
+  </div>
+</div>
+
+  <div class="tarjeta">
+    <div class="titulo">Calculadora Frecuencia Cardiaca	Máxima</div>
+    <div class="cuerpo">
+      <p>Ingrese de edad: <input type="text" id="edad"></p>
+      <p>sexo: <input type="text" id="sexo"></p>
+  
+      <p>Frecuencia maxima: <span id="frecuencia"></span></p>
+      <p>Frecuencia: <br> <span id="lectura2"></span></p>
+      <p><span id="lectura3"></span></p>
+      <p><span id="lectura4"></span></p>
+      <p><span id="lectura5"></span></p>
+
+    </div>
+    <div class="pie">
+      <input id="calc2" type="button" onclick="calcular2()" value="calcular"></input>
+    </div>
+    </div>
+  <br>
 
 
-<h2>Calculadora Frecuencia Cardiaca	Máxima</h2>
-<p>Ingrese de edad: <input type="text" id="edad"></p>
-<p>sexo: <input type="text" id="sexo"></p>
-<input id="calc2" type="button" onclick="calcular2()" value="calcular"></input>
-<p>Frecuencia maxima: <span id="frecuencia"></span></p>
-<p>Frecuencia: <br> <span id="lectura2"></span></p>
-<p><span id="lectura3"></span></p>
-<p><span id="lectura4"></span></p>
-<p><span id="lectura5"></span></p>
+    <div class="tarjeta">
+      <div class="titulo">Calculadora de categoria</div>
+      <div class="cuerpo">
+        <p>Ingrese año de nacimiento: <input type="text" id="anio"></p>
+    
+        <p>Categoria: <span id="lectura10"></span></p>
+      </div>
+      <div class="pie">
+        <input id="calc3" type="button" onclick="calcular3()" value="calcular"></input>
+      </div>
+    </div>
 
 
-<h2>Calculadora de categoria</h2>
-<p>Ingrese año de nacimiento: <input type="text" id="anio"></p>
-<input id="calc3" type="button" onclick="calcular3()" value="calcular"></input>
-<p>Categoria: <span id="lectura10"></span></p>
-
-
-<h2>Calculadora de horarios</h2>
-<!--
-crea un boton que al darle click se ejecuta la funcion horariomanana -->
-<input id="calc4" type="button" onclick="horarioManana()" value="manana"></input>
+    <div class="tarjeta">
+      <div class="titulo">Calculadora de horarios</div>
+      <div class="cuerpo">
+      </div>
+      <div class="pie">
+        <input id="calc4" type="button" onclick="horarioManana()" value="manana"></input>
 <input id="calc4" type="button" onclick="horarioTarde()" value="tarde"></input>
 
+      </div>
+    </div>
 
   <footer>
 
