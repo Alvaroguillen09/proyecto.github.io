@@ -28,7 +28,7 @@
     left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
     padding-top:47px;
     background-color: rgba(29, 33, 32, 1);
-    border-right:4px solid rgba(114, 126, 3, 1);
+    border-right:4px solid #746e6e;
     transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
   }
      /*Estilos de los li del menú*/
@@ -65,7 +65,7 @@
             height:0;
             position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
             border-top:16.5px solid transparent;
-            border-left:17px solid rgba(114, 126, 3, 1);
+            border-left:17px solid #746e6e;
             border-bottom:17px solid transparent;
             top:.5px;
             right:-21px;
@@ -80,10 +80,10 @@
       top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
       left: 8px; 
       border-radius:3px;
-      background-color: #142b25;
+      background-color: #746e6e;
       transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
       z-index:10;
-      margin-top: 1.07%;
+      margin-top: 0.5%;
 
     }
       /*Añadimos la haburguesa y le damos unos estilos*/

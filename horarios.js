@@ -19,9 +19,9 @@ function horarioManana() {
     let hola=" ";
     hola = "<table border='1'>";
     hola += "<tr><th>HORA</th><th>LUNES</th><th>MARTES</th><th>MIERCOLES</th><th>JUEVES</th><th>VIERNES</th><th>SABADO</th><th>DOMINGO</th></tr>";
-    for (let i = 15; i < 21; i += 2) {
+    for (let i = 16; i < 21; i += 1) {
         hola += "<tr>";
-        hola += "<th>" + i + ":00 - " + (i + 2) + ":00</th>";
+        hola += "<th>" + i + ":00 - " + (i + 1) + ":00</th>";
         for (let j = 0; j < 7; j++) {
             hola += "<td></td>";
         }
