@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="calendario.css">
   <link rel="stylesheet" href="boton.css">
@@ -17,108 +18,105 @@
   <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 
-  <body>
-    <header>
-      <div class="indices">
+<body>
+  <header>
+    <div class="indices">
       <ul>
-        <li><a href="default.html">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </div>
     <div class="fecha">
       <script>
-        var f=new Date();
-        var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        var f = new Date();
+        var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
         document.write('<div class="mifecha">');
         document.write('<div class="ano">' + f.getFullYear() + '</div>');
         document.write('<div class="dia">' + f.getDate() + '</div>');
         document.write('<div class="mes">' + meses[f.getMonth()] + '</div>');
         document.write('</div>');
-        </script>
-        </div>
-    </header>
-
-    <script language=javascript> 
-      function ventanaSecundaria (URL){ 
-         window.open(URL,"ventana1","width=320,height=320,scrollbars=NO") 
-      } 
-      
-      ventanaSecundaria("index.html"); 
       </script>
+    </div>
+  </header>
 
-<input type="checkbox" class="checkbox" id="menu-toogle"/>
-<label for="menu-toogle" class="menu-toogle"></label>
-<nav class="nav">
-  <a href="#" class="nav__item current">Item del Menú 1</a>
-  <a href="#" class="nav__item">Item del Menú 2</a>
-  <a href="#" class="nav__item">Item del Menú 3</a>
-  <a href="#" class="nav__item">Item del Menú 4</a>
-  <a href="#" class="nav__item">Item del Menú 5</a>
-</nav>
+  <script language=javascript>
+    function ventanaSecundaria(URL) {
+      window.open(URL, "ventana1", "width=320,height=320,scrollbars=NO")
+    }
 
+    ventanaSecundaria("index.html"); 
+  </script>
 
-<div class="tarjeta">
-  <div class="titulo">Calculadora indice de masa corporal</div>
-  <div class="cuerpo">
-    <p>Ingrese peso (kg): <input type="text" id="kg"></p>
-    <p>Ingrese Altura (cm): <input type="text" id="m"></p>
+  <input type="checkbox" class="checkbox" id="menu-toogle" />
+  <label for="menu-toogle" class="menu-toogle"></label>
+  <nav class="nav">
+    <a href="index.html" class="nav__item current">Inicio</a>
+    <a href="contacto.html" class="nav__item">Contacto</a>
+    <a href="aviso.html" class="nav__item">Aviso legal</a>
 
-    <p>IMC: <span id="imc"></span></p>
-    <p>Se encuentra en: <span id="lectura"></span></p>
-  </div>
-  <div class="pie">
-    <input id="calc" type="button" onclick="calcular()" class="boton" value="calcular"></input>
-  </div>
-</div>
+  </nav>
+
 
   <div class="tarjeta">
-    <div class="titulo">Calculadora Frecuencia Cardiaca	Máxima</div>
+    <div class="titulo">Calculadora indice de masa corporal</div>
     <div class="cuerpo">
-      <p>Ingrese de edad: <input type="text" id="edad"></p>
-      <p>sexo: <input type="text" id="sexo"></p>
-  
+      <p>Ingrese su peso (kg): <input type="text" id="kg"></p>
+      <p>Ingrese su Altura (cm): <input type="text" id="m"></p>
+
+      <p>IMC: <span id="imc"></span></p>
+      <p>Se encuentra en: <span id="lectura"></span></p>
+    </div>
+    <div class="pie">
+      <input id="calc" type="button" onclick="calcular()" class="boton" value="calcular"></input>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <div class="titulo">Calculadora Frecuencia Cardiaca Máxima</div>
+    <div class="cuerpo">
+      <p>Ingrese su edad: <input type="text" id="edad"></p>
+      <p>sexo:(hombre o mujer) <input type="text" id="sexo"></p>
+
       <p>Frecuencia maxima: <span id="frecuencia"></span></p>
-      <p>Frecuencia: <br> <span id="lectura2"></span></p>
+      <p>Frecuencias: <br> <span id="lectura2"></span></p>
       <p><span id="lectura3"></span></p>
       <p><span id="lectura4"></span></p>
       <p><span id="lectura5"></span></p>
 
     </div>
     <div class="pie">
-      <input id="calc2" type="button" onclick="calcular2()"class="boton" value="calcular"></input>
+      <input id="calc2" type="button" onclick="calcular2()" class="boton" value="calcular"></input>
     </div>
-    </div>
+  </div>
   <br>
 
 
-    <div class="tarjeta">
-      <div class="titulo">Calculadora de categoria</div>
-      <div class="cuerpo">
-        <p>Ingrese año de nacimiento: <input type="text" id="anio"></p>
-    
-        <p>Categoria: <span id="lectura10"></span></p>
-      </div>
-      <div class="pie">
-        <input id="calc3" type="button" onclick="calcular3()"class="boton" value="calcular"></input>
-      </div>
+  <div class="tarjeta">
+    <div class="titulo">Calculadora de categorias</div>
+    <div class="cuerpo">
+      <p>Ingrese año de nacimiento: <input type="text" id="anio"></p>
+
+      <p>Su categoria: <span id="lectura10"></span></p>
     </div>
+    <div class="pie">
+      <input id="calc3" type="button" onclick="calcular3()" class="boton" value="calcular"></input>
+    </div>
+  </div>
 
 
-    <div class="tarjeta">
-      <div class="titulo">Calculadora de horarios</div>
-      <div class="cuerpo">
-        <span id="tabla"></span>
-        <span id="tabla2"></span>
-      </div>
-      <div class="pie">
-        <input id="calc4" type="button" onclick="horarioManana()"class="boton" value="mañana"></input>
-        <br>
-        <input id="calc4" type="button" onclick="horarioTarde()"class="boton" value="tarde"></input>
-        
-      </div>
+  <div class="tarjeta">
+    <div class="titulo">Calculadora de horarios</div>
+    <div class="cuerpo">
+      <span id="tabla"></span>
+      <span id="tabla2"></span>
     </div>
+    <div class="pie">
+      <input id="calc4" type="button" onclick="horarioManana()" class="boton" value="mañana"></input>
+      <br>
+      <input id="calc4" type="button" onclick="horarioTarde()" class="boton" value="tarde"></input>
+
+    </div>
+  </div>
 
   <footer>
 
@@ -135,11 +133,13 @@
 
       <div class="footer-left">
         <p class="footer-links">
-          <a class="link-1" href="#">Home</a>
-          <a href="#">Contact</a>
+          <a class="link-1" href="index.html">Inicio</a>
+          <a href="contacto.html">Contacto</a>
         </p>
-        <p>&copy;Copyright de la pagina de Antonio Pacheco y Alvaro Guillen</p>
+        <p>&copy;Copyright de la pagina de Antonio Pacheco y Alvaro Guillen.</p>
+        <a href="aviso.html">Aviso legal</a>
       </div>
-  </footer>
-  </body>
+    </footer>
+</body>
+
 </html>

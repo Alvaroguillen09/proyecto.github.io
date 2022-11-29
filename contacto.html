@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  
+
+</head>
+
+<body>
+  
+  
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+
+          <form action="contacto.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="titulo" class="colocar_titulo">Titulo
+                  </label>
+                    <input type="text" name="introducir_titulo" id="titulo" placeholder="Escribe el titulo">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Cuerpo del mensaje">
+                </p>    
+                                 
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>   
+                <a href="index.html" type="button" >Volver al inicio</a>       
+            
+          </form>
+    </div>  
+  </div>
+  <footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+  </footer>
+</body>
+</html>
