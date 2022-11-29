@@ -1,3 +1,5 @@
 body{
+    display: flex;
+    text-align: center;
     background-image: url("https://acegif.com/wp-content/uploads/gif/confetti-8.gif");
 }
