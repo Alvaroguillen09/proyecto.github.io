@@ -7,7 +7,7 @@
   body {
     margin:0;
     padding:0;
-    background-color:#A9BC00;
+    background-color:#e9e9e9;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
@@ -83,6 +83,8 @@
       background-color: #142b25;
       transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
       z-index:10;
+      margin-top: 1.07%;
+
     }
       /*Añadimos la haburguesa y le damos unos estilos*/
       .menu-toogle::before {
